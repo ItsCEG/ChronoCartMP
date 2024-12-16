@@ -48,19 +48,28 @@ public class HomeFragment extends Fragment {
         rv.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.HORIZONTAL));
 
         // dummy item, harus pakai database. Nanti ini dihapus
-        itemList = new ArrayList<>();
-        itemList.add(new ItemModel("Casio", 1250000));
-        itemList.add(new ItemModel("Rolex", 10000000));
-        itemList.add(new ItemModel("Seiko", 525000));
-        itemList.add(new ItemModel("Timex", 15000000));
-        itemList.add(new ItemModel("Omega", 250000));
+        itemList = getWatchList();
 
-        ItemAdapter adapter = new ItemAdapter(itemList);
+        ItemHomeAdapter adapter = new ItemHomeAdapter(itemList);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         rv.setLayoutManager(layoutManager);
 
         rv.setAdapter(adapter);
         return view;
+    }
+
+    private List<ItemModel> getWatchList() {
+        List<ItemModel> list = new ArrayList<>();
+        list.add(new ItemModel("Alexandre Christie Chronograph AC 6", 1500000.0));
+        list.add(new ItemModel("Spinnaker Fleuss SP-5055-06", 2315000.0));
+        list.add(new ItemModel("Timex Weekender TW2R42500", 215000.0));
+        list.add(new ItemModel("Rolex Submariner", 150000000));
+        list.add(new ItemModel("Rolex GMT Master", 200000000));
+        list.add(new ItemModel("Seiko 5 Sport ", 10000000));
+        list.add(new ItemModel("Alexandre Christie Chronograph AC 6", 1500000.0));
+        list.add(new ItemModel("Spinnaker Fleuss SP-5055-06", 2315000.0));
+        list.add(new ItemModel("Timex Weekender TW2R42500", 215000.0));
+        return list;
     }
 }
