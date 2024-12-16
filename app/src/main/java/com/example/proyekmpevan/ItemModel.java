@@ -2,9 +2,9 @@ package com.example.proyekmpevan;
 
 public class ItemModel {
     private String name;
-    private String price;
+    private double price;
 
-    public ItemModel(String inputName, String inputPrice){
+    public ItemModel(String inputName, double inputPrice){
         name = inputName;
         price = inputPrice;
     }
@@ -13,7 +13,7 @@ public class ItemModel {
         return name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 }

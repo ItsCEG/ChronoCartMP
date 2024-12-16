@@ -49,11 +49,11 @@ public class HomeFragment extends Fragment {
 
         // dummy item, harus pakai database. Nanti ini dihapus
         itemList = new ArrayList<>();
-        itemList.add(new ItemModel("Casio", "Rp 1.250.000"));
-        itemList.add(new ItemModel("Rolex", "Rp 10.000.000"));
-        itemList.add(new ItemModel("Seiko", "Rp 525.000"));
-        itemList.add(new ItemModel("Timex", "Rp 15.000.000"));
-        itemList.add(new ItemModel("Omega", "Rp 250.000"));
+        itemList.add(new ItemModel("Casio", 1250000));
+        itemList.add(new ItemModel("Rolex", 10000000));
+        itemList.add(new ItemModel("Seiko", 525000));
+        itemList.add(new ItemModel("Timex", 15000000));
+        itemList.add(new ItemModel("Omega", 250000));
 
         ItemAdapter adapter = new ItemAdapter(itemList);
 

@@ -35,15 +35,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ItemAdapter.ViewHolder holder, int position) {
         String name = itemList.get(position).getName();
-        String price = itemList.get(position).getPrice();
+        double price = itemList.get(position).getPrice();
+
+        String priceText = String.format("Rp %.2f", price);
 
         holder.watchName.setText(name);
-        holder.watchPrice.setText(price);
+        holder.watchPrice.setText(priceText);
     }
 
     @Override
     public int getItemCount() {
-        return itemList.size();
+        return Math.min(itemList.size(), 7);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
