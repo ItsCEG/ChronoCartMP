@@ -17,9 +17,9 @@ import java.util.List;
 
 public class ItemProductAdapter extends RecyclerView.Adapter<ItemProductAdapter.ViewHolder> {
     Context activityContext;
-    List<ItemModel> itemList;
+    List<Item> itemList;
 
-    public ItemProductAdapter(List<ItemModel> inputItem){
+    public ItemProductAdapter(List<Item> inputItem){
         itemList = inputItem;
     }
 

@@ -1,12 +1,15 @@
 package com.example.proyekmpevan;
 
-public class ItemModel {
+public class Item {
     private String name;
     private double price;
 
-    public ItemModel(String inputName, double inputPrice){
-        name = inputName;
-        price = inputPrice;
+    public Item(){
+    }
+
+    public Item(String name, double price){
+        this.name = name;
+        this.price = price;
     }
 
     public String getName() {

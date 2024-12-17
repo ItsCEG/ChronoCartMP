@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.proyekmpevan.R;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
 
 //        Load home fragment sebagai default
         if(savedInstanceState == null){

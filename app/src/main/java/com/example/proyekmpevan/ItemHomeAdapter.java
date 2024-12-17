@@ -15,9 +15,9 @@ import java.util.List;
 
 public class ItemHomeAdapter extends RecyclerView.Adapter<ItemHomeAdapter.ViewHolder> {
     Context activityContext;
-    List<ItemModel> itemList;
+    List<Item> itemList;
 
-    public ItemHomeAdapter(List<ItemModel> inputItem){
+    public ItemHomeAdapter(List<Item> inputItem){
         itemList = inputItem;
     }
 
@@ -34,13 +34,9 @@ public class ItemHomeAdapter extends RecyclerView.Adapter<ItemHomeAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ItemHomeAdapter.ViewHolder holder, int position) {
-        String name = itemList.get(position).getName();
-        double price = itemList.get(position).getPrice();
-
-        String priceText = String.format("Rp %.0f", price);
-
-        holder.watchName.setText(name);
-        holder.watchPrice.setText(priceText);
+        Item item = itemList.get(position);
+        holder.watchName.setText(item.getName());
+        holder.watchPrice.setText(String.format("Rp %,d", (int) item.getPrice()));
     }
 
     @Override

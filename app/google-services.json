@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "411504313618",
+    "firebase_url": "https://mobile-programming-proje-95e06-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mobile-programming-proje-95e06",
+    "storage_bucket": "mobile-programming-proje-95e06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411504313618:android:063eb464342448d8c31fcb",
+        "android_client_info": {
+          "package_name": "com.example.proyekmpevan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlGruwELSr7AtbWXUkcpVMPOGJYd8yNzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
